@@ -1,0 +1,2 @@
+/home/manaswi/Downloads/cs675-computer-graphics-2026-a2-animate-arashdev7-main/build/CMakeFiles/edit_cache.dir
+/home/manaswi/Downloads/cs675-computer-graphics-2026-a2-animate-arashdev7-main/build/CMakeFiles/rebuild_cache.dir

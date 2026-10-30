@@ -13,8 +13,8 @@
                Harshavardhan Kode
 */
 
-
-#include "ihateu.hpp"
+#include "texture_util.hpp"
+#include "a2_animate_minifig.hpp"
 #include "primitives.hpp"
 #include "ihateumore.hpp"
 
@@ -247,8 +247,13 @@ int main(int argc, char** argv)
   glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 
   //Initialize GL state
+  std::cout << "A: before initGL" << std::endl;
   csX75::initGL();
+  std::cout << "B: before initBuffersGL" << std::endl;
   initBuffersGL();
+  std::cout << "C: before loadTexture" << std::endl;
+  GLuint testTex = loadTexture("batman.png");
+  std::cout << "D: after loadTexture, id=" << testTex << std::endl;
 
   // Loop until the user closes the window
   while (glfwWindowShouldClose(window) == 0)
